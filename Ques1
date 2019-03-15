@@ -1,0 +1,20 @@
+function Person(name, age, contact){
+	this.name=name;
+    this.age=age;
+    this.contact=contact;
+   }
+function Employee(salary, department){
+	this.salary=salary;
+    this.department=department;
+ }
+function Developer(competancy, project){
+	this.competancy=competancy;
+    this.project=project;
+    }
+
+Employee.prototype=new Person('Abc', 25, 56577855);
+Developer.prototype=new Employee(20000, 'IT');
+
+var dev=new Developer('Mean', 'XYZ');
+
+console.log("Name : "+dev.name+"\n"+"Age : "+dev.age+"\n"+"Contact : "+dev.contact+"\n"+"Salary : "+dev.salary+"\n"+"Department : "+dev.department+"\n"+"Competancy : "+dev.competancy+”\n”+"Project: "+dev.project);
