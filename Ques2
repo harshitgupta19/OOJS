@@ -1,0 +1,12 @@
+i=0;
+myfunc= function()
+{
+a=[1,2,3,4,5];
+if(i<a.length){
+	console.log(a[i]);
+	setTimeout(myfunc,3000);
+	i++;
+}
+}
+    
+myfunc();    
