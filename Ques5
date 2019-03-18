@@ -1,0 +1,10 @@
+var count=0;
+function counter(){
+	
+    var a='harshit';
+    count++;
+    return count;
+}
+counter();
+counter();
+counter();
