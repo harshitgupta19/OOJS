@@ -1,0 +1,13 @@
+function demo(){
+    var count=0;
+    function mycounter(n){
+        while(count<n){
+            console.log(count);
+			count++;
+        }
+    }
+mycounter(5);
+}
+
+demo();
+
